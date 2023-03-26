@@ -15,7 +15,9 @@ module.exports = {
         bluegreen: '#3CACAE',
         turq: '#C8F4F9',
         lilac: '#EEB5EB',
-        orchid: '#C26DBC'
+        orchid: '#C26DBC',
+        carafe: '#4E1A3D',
+        iris: '#5D3FD3'
       },
     },
   },
