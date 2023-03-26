@@ -1,10 +1,19 @@
 import React from 'react';
-import './app.css';
+import { Contact, Footer, Hero, Navbar, About } from './containers'
+import './app.css'
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
+    return (
+        <div>
+            <div className="appgradient">
+                <Navbar />
+                <Hero />
+            </div>
+            <About />
+            <Contact />
+            <Footer />
+        </div>
+    )
 };
 
 export default App;

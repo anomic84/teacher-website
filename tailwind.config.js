@@ -4,7 +4,20 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'climate': 'Climate Crisis, cursive',
+        'manrope': 'Manrope, sans-serif',
+        'euph': 'Euphoria Script, cursive',
+        'ubuntu': 'Ubuntu, sans-serif'
+      },
+      colors: {
+        bluegreen: '#3CACAE',
+        turq: '#C8F4F9',
+        lilac: '#EEB5EB',
+        orchid: '#C26DBC'
+      },
+    },
   },
   plugins: [],
 }
