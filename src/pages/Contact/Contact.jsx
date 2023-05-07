@@ -2,7 +2,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className='w-screen bottom-0 mt-auto fixed'
+    id='contact'>Contact</div>
   )
 }
 
