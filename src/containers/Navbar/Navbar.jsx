@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=' -full py-3 lg:py-7'>
+      <div className=' w-full py-3 lg:py-7'>
         {/* // MONITORS */}
         <div className='hidden lg:flex flex-row justify-center items-center'>
           <div className='flex'>
@@ -34,14 +34,14 @@ const Navbar = () => {
           <div>
             <p className='p-3 text-[50px] text-iris font-climate drop-shadow-lg'><Link to='/home'>ROBIN CARLSON</Link></p>
           </div>
-          <div className='flex justify-between items-center'>
+          <div className='flex justify-between items-center font-manrope'>
             <div className='flex justify-between'>
               <p className='px-3 text-sm text-iris drop-shadow-lg'><Link to='/about'>ABOUT</Link></p>
               <p className='px-3 text-sm text-iris drop-shadow-lg'><Link to='/reading'>READING</Link></p>
               <p className='px-3 text-sm text-iris drop-shadow-lg'><Link to='/writing'>WRITING</Link></p>
               <p className='px-3 text-sm text-iris drop-shadow-lg'><Link to='/socialstudies'>SOCIAL STUDIES</Link></p>
             </div>
-            <div className='flex justify-between'>
+            <div className='flex justify-between font-manrope'>
               <p className='px-3 text-sm text-iris drop-shadow-lg'><Link to='/math'>MATH</Link></p>
               <p className='px-3 text-sm text-iris drop-shadow-lg'><Link to='/science'>SCIENCE</Link></p>
               <p className='px-3 text-sm text-iris drop-shadow-lg'><Link to='/contact'>CONTACT</Link></p>
@@ -53,13 +53,13 @@ const Navbar = () => {
           {/* 1 */}
           <div className='sm:hidden flex flex-row items-center justify-between px-5'>
             {toggleMenu ? (
-              ''
+              <p className='hidden'></p>
             ) : (
-              <p className='text-[25px]  font-climate tracking-widest text-iris'><Link to='/'>ROBIN CARLSON</Link></p>
+              <p className='text-[25px]  font-climate tracking-widest text-iris drop-shadow-xl'><Link to='/'>ROBIN CARLSON</Link></p>
             )}
 
             {toggleMenu ? (
-              ''
+              <p className='hidden'></p>
             ) : (<FaBars
               className="text-iris"
               size={27}
@@ -73,7 +73,7 @@ const Navbar = () => {
                 <FaTimes className='text-iris'
                   size={27}
                   onClick={() => setToggleMenu(false)} />
-                <div className='z-10 h-screen flex justify-center items-center'>
+                <div className='z-10 h-screen flex justify-center items-center scroll'>
                   <div className="text-iris my-auto sm:text-xl text-center w-full flex flex-col justify-center">
 
                     <Link to='/about' className='py-5 text-xl' onClick={() => setToggleMenu((prev) => !prev)}>ABOUT</Link>

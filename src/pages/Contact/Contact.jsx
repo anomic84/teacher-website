@@ -2,8 +2,9 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='w-screen bottom-0 mt-auto fixed'
-    id='contact'>Contact</div>
+    <div className='hidden md:block w-screen bottom-0 mt-auto fixed'
+    id='contact'>Contact
+    </div>
   )
 }
 
