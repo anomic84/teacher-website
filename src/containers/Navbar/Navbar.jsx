@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=' w-full py-3 lg:py-7'>
+      <div className=' w-full lg:py-7 appgradient'>
         {/* // MONITORS */}
         <div className='hidden lg:flex flex-row justify-center items-center'>
           <div className='flex'>
@@ -25,12 +25,12 @@ const Navbar = () => {
               <p className='lg:px-2  xl:px-3 whitespace-nowrap text-md text-iris drop-shadow-lg'><Link to='/about'>ABOUT</Link></p>
               <p className='lg:px-2  xl:px-3 whitespace-nowrap text-md text-iris drop-shadow-lg'><Link to='/math'>MATH</Link></p>
               <p className='lg:px-2  xl:px-3 whitespace-nowrap text-md text-iris drop-shadow-lg'><Link to='/science'>SCIENCE</Link></p>
-              <p className='lg:px-2  xl:px-3 whitespace-nowrap text-md text-iris drop-shadow-lg'><Link to='/contact'>CONTACT</Link></p>
+              {/* <p className='lg:px-2  xl:px-3 whitespace-nowrap text-md text-iris drop-shadow-lg'><Link to='/contact'>CONTACT</Link></p> */}
             </div>
           </div>
         </div>
         {/* // TABLET */}
-        <div className='hidden sm:flex lg:hidden flex-col items-center'>
+        <div className='hidden sm:flex lg:hidden flex-col items-center appgradient py-3'>
           <div>
             <p className='p-3 text-[50px] text-iris font-climate drop-shadow-lg'><Link to='/home'>ROBIN CARLSON</Link></p>
           </div>
@@ -44,18 +44,18 @@ const Navbar = () => {
             <div className='flex justify-between font-manrope'>
               <p className='px-3 text-sm text-iris drop-shadow-lg'><Link to='/math'>MATH</Link></p>
               <p className='px-3 text-sm text-iris drop-shadow-lg'><Link to='/science'>SCIENCE</Link></p>
-              <p className='px-3 text-sm text-iris drop-shadow-lg'><Link to='/contact'>CONTACT</Link></p>
+              {/* <p className='px-3 text-sm text-iris drop-shadow-lg'><Link to='/contact'>CONTACT</Link></p> */}
             </div>
           </div>
         </div>
         {/* MOBILE */}
-        <div className='w-full'>
+        <div className='w-full appgradient'>
           {/* 1 */}
-          <div className='sm:hidden flex flex-row items-center justify-between px-5'>
+          <div className='sm:hidden flex flex-row items-center justify-between px-5 py-3'>
             {toggleMenu ? (
               <p className='hidden'></p>
             ) : (
-              <p className='text-[25px]  font-climate tracking-widest text-iris drop-shadow-xl'><Link to='/'>ROBIN CARLSON</Link></p>
+              <p className='text-[25px] font-climate tracking-widest text-iris drop-shadow-xl'><Link to='/'>ROBIN CARLSON</Link></p>
             )}
 
             {toggleMenu ? (

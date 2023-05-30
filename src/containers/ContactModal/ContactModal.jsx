@@ -94,12 +94,12 @@ const ContactModal = () => {
                 //         className='fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm
                 // flex justify-center items-center w-full'>
                 <div
-                    className='fixed bottom-0 h-[80vh] appgradient border-t-4 border-iris backdrop-blur-sm
+                    className='fixed bottom-0 h-[80vh] appgradient border-t-4 border-iris backdrop-blur-sm 
             flex justify-center items-center w-full drop-shadow-lg duration-300'>
                     <div className='overlay w-[90%] '>
                         <div
-                            className='modal-content bg-apricot bg-opacity-75 border-iris border-2 rounded-lg p-2 drop-shadow-xl 
-                    sm:w-[400px]
+                            className='modal-content bg-apricot bg-opacity-75 border-iris border-2 rounded-lg p-2 drop-shadow-xl mx-auto
+                    sm:w-[600px]
                     xl:w-[800px]'
                         >
                             <div className='xl:py-8'>

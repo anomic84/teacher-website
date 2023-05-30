@@ -8,7 +8,7 @@ const App = () => {
     return (
         <Router>
             <div>
-                <div className="appgradient h-screen">
+                <div >
 
                     <Navbar />
 
